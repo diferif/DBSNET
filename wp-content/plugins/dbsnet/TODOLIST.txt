@@ -1,0 +1,20 @@
+===================== TENANT ============================
+	CREATE:
+		+ register tenant
+
+	RETRIEVE:
+		+ retrieve list
+		+ retrieve detail
+
+		- retrieve picture
+
+	UPDATE
+		+ retrieve tenant data
+
+		- function
+
+	DELETE
+		+ retrieve tenant data
+		+ delete tenant
+
+		- delete Related Outlet, Product, Content , etc.

@@ -1,0 +1,1 @@
+<a href="?page=dbsnet-category&doaction=create-new">Create New Category</a>
