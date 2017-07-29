@@ -8,7 +8,7 @@ class DBSnet_Content_Manager {
 	public function __construct() {
 		$this->plugin_slug = 'dbsnet-content-manager-slug';
 		$this->version = '0.1.0';
-		$this->models  = array( "Model_Tenant", "Model_Bank" );
+		$this->models  = array( "Model_Tenant", "Model_Bank", "Model_Category" );
 
 		$this->load_dependencies();
 		$this->define_admin_hooks();
@@ -37,6 +37,7 @@ class DBSnet_Content_Manager {
 
 		$this->loader->add_action( 'wp_ajax_CreateNewTenant', $admin, 'CreateTenant' );
 		$this->loader->add_action( 'wp_ajax_CreateNewBank', $admin, 'CreateBank' );
+		$this->loader->add_action( 'wp_ajax_CreateNewCategory', $admin, 'CreateCategory' );
 
 		$this->loader->add_action( 'wp_ajax_UpdateTenant', $admin, 'UpdateTenant' );
 		$this->loader->add_action( 'wp_ajax_UpdateBank', $admin, 'UpdateBank' );

@@ -7,9 +7,14 @@
 			<label class="col-sm-offset-2  col-sm-4 control-label form-message" for="message-category"></label>
 		</div>
 		<div class="form-group">
-			<label class="col-sm-2 control-label" for="category-name">Category Name <strong>*</strong></label>
+			<label class="col-sm-2 control-label" form="category-name">Category Name <strong>*</strong></label>
 			<div class="col-sm-4">
 				<input type="text" name="category-name" class="form-control" id="category-name" placeholder="name" required="required">
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2 control-label" for="category-name">Category Description <strong>*</strong></label>
+			<div class="col-sm-4">
+				<input type="text-area" name="category-desc" class="form-control" id="category-desc" placeholder="description" required="required">
 		</div>
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-4">
@@ -27,6 +32,7 @@ jQuery(document).ready( function($) {
 		e.preventDefault();
 		
 		var inp_categoryname = $( "#category-name" ),
+			inp_categorydesc = $( "#category-desc"),
 			not_empty = true;
 
 		if( $.trim( inp_categoryname.val() ) == '' ) {
@@ -34,13 +40,20 @@ jQuery(document).ready( function($) {
 			inp_categoryname.focus();
 			not_empty = false;
 		}
+
+		if( $.trim( inp_categorydesc.val() ) == '' ) {
+			inp_categorydesc.addClass( 'req-input input-empty');
+			inp_categorydesc.focus();
+			not_empty = false;
+		}
 		
 		// console.log(not_empty);
 
 		if( not_empty ) {
 			var data = {
-				action: "CreateNewBank",
+				action: "CreateNewCategory",
 				categoryname: inp_categoryname.val(),
+				categorydesc: inp_categorydesc.val()
 			};
 			// console.log(data);
 			$.post(
@@ -59,12 +72,14 @@ jQuery(document).ready( function($) {
 				}
 			);
 		}else{
-			$( "label.form-message").html( "<p class='text-danger'>Bank name is required.</p>");
+			$( "label.form-message").html( "<p class='text-danger'>Category name is required.</p>");
 		}
 	});
 
 	function reset_form_tenant() {
-		$( "#category-name" ).val( "" );	}
+		$( "#category-name" ).val( "" );	
+		$( "#category-desc" ).val( "" );
+	}
 	
 });
 </script>

@@ -326,7 +326,7 @@ class DBSnet_Content_Manager_Admin {
 						$action_template = 'delete';
 					}
 
-					$obj = new Model_Product();
+					$obj = new Model_Category();
 					$obj->HasID( $get_bank_id );
 					$attributes[ 'category' ] = $obj;
 				}
@@ -414,6 +414,38 @@ class DBSnet_Content_Manager_Admin {
 				
 				// echo wp_json_encode( $tenant->GetUsername);
 				$result = $bank->AddNew();
+			}
+			else {
+				$result[ 'message' ] = 'parameter tidak valid!';
+			}
+		}
+		else {
+			$result[ 'message' ] = 'parameter tidak lengkap!';
+		}
+
+		echo wp_json_encode( $result );
+
+		wp_die();
+	}
+
+	public function CreateCategory() {
+		$result = array( 'status' => false, 'message' => '' );
+		//echo wp_json_encode( $_POST );
+		$post_isset = isset( $_POST[ 'categoryname' ] ) && isset( $_POST[ 'categorydesc' ] );
+		// echo wp_json_encode( $post_isset );
+		if( $post_isset ) {
+			$post_categoryname = sanitize_text_field( $_POST[ 'categoryname' ] );
+			$post_categorydesc = sanitize_text_field( $_POST[ 'categorydesc' ] );
+			
+			$post_not_empty = ($post_categoryname!="") && ($post_categorydesc!="");
+			// echo wp_json_encode( $post_not_empty );
+			if( $post_not_empty ) {
+				$category = new Model_Category();
+				$category->SetName( $post_categoryname );
+				$category->SetDescription( $post_categorydesc );
+
+				// echo wp_json_encode( $tenant->GetUsername);
+				$result = $category->AddNew();
 			}
 			else {
 				$result[ 'message' ] = 'parameter tidak valid!';

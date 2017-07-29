@@ -21,7 +21,7 @@ class Model_Category implements IlistItem
 
 	private $descriiption;
 	public function GetDescription() { return $this->description; }
-	public function SetName( $description ) { $this->description = $description; }
+	public function SetDescription( $description ) { $this->description = $description; }
 
 	function __construct()
 	{
