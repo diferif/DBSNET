@@ -86,7 +86,7 @@ class Model_Bank implements IlistItem
 		))
 			{
 				$result['status'] = true;
-				$result['message'] = "Berhasil menghapus tenant";
+				$result['message'] = "Berhasil menghapus Bank";
 			} 
 		return $result;
 	}
