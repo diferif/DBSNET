@@ -59,9 +59,9 @@ class DBSnet_Content_Manager_Admin {
 			array( $this, 'render_dbsnet_product')
 			);
 		add_submenu_page(
-			'dbsnet-product',
-			'DBSnet' . ' Category',
-			'Category',
+			'dbsnet-content-dashboard',
+			'DBSnet' . 'Product Category',
+			'Product Category',
 			'manage_options',
 			'dbsnet-category',
 			array( $this, 'render_dbsnet_category')
