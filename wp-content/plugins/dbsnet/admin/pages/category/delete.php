@@ -17,5 +17,5 @@
 		<button class="btn btn-danger" type="submit" id="btn-delete-category" name="submit-delete-category">YES</button>
 	</form>
 </div>
-| Go to <a href="<?php echo admin_url( 'admin.php?page=dbsnet-category' ); ?>">Bank list</a>.
+| Go to <a href="<?php echo admin_url( 'admin.php?page=dbsnet-category' ); ?>">Category list</a>.
 <?php } ?>
