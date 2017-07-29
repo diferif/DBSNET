@@ -569,6 +569,53 @@ class DBSnet_Content_Manager_Admin {
 		wp_die();
 	}
 
+	public function UpdateCategory() {
+		$result = array( 'status' => false, 'message' => '' );
+		$post_isset = isset( $_POST[ 'category' ] ) && isset( $_POST[ 'categoryname' ] ) && isset( $_POST[ 'categorydesc' ] );
+		
+		//var_dump($_POST);
+		if( $post_isset ) {
+			$post_category = sanitize_text_field( $_POST[ 'category' ] );
+			$post_categoryname = sanitize_text_field( $_POST[ 'categoryname' ] );
+			$post_categorydesc = sanitize_text_field( $_POST[ 'categorydesc' ] );
+
+			$post_not_empty = ($post_category > 0) && ($post_categoryname!="") && ($post_categorydesc!="");
+			// var_dump($post_not_empty);
+			if( $post_not_empty ) {
+				
+				$category = new Model_Category();
+				$category->HasID( $post_category );
+
+				// compare data
+				$oldData = array(
+					$category->GetName(),
+					$category->GetDescription()// other
+					);
+				$newData = array(
+					$post_categoryname,
+					$post_categorydesc// nama 
+					);
+				
+				if ( $oldData !== $newData ) {
+					$category->SetName( $post_categoryname );
+					$category->SetDescription( $post_categorydesc );
+
+					$result = $category->Update();
+				}
+			}
+			else {
+				$result[ 'message' ] = 'parameter tidak valid!';
+			}
+		}
+		else {
+			$result[ 'message' ] = 'parameter tidak lengkap!';
+		}
+
+		echo wp_json_encode( $result );
+
+		wp_die();
+	}
+
 	public function RetrievePagination() {
 
 		if( isset( $_GET[ 'listfor' ] ) && isset( $_GET[ 'limit' ] ) ) {

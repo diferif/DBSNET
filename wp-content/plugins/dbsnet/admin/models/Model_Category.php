@@ -19,7 +19,7 @@ class Model_Category implements IlistItem
 	public function GetName() { return $this->name; }
 	public function SetName( $name ) { $this->name = $name; }
 
-	private $descriiption;
+	private $description;
 	public function GetDescription() { return $this->description; }
 	public function SetDescription( $description ) { $this->description = $description; }
 
@@ -53,13 +53,14 @@ class Model_Category implements IlistItem
 
 	public function Update() {
 		global $wpdb;
-		$result = array( "status" => false, "message" => "gagal update bank" );
+		$result = array( "status" => false, "message" => "gagal update category" );
 
 		$arrUpdateData = array(
-			'bank_name' => $this->name,
+			'category_name' => $this->name,
+			'category_desc' => $this->description
 			);
-		$arrCondition = array( 'bank_id' => $this->id );
-		$arrDataType = array( '%s' );
+		$arrCondition = array( 'category_id' => $this->id );
+		$arrDataType = array( '%s','%s' );
 		$arrConditionType = array( '%d' );
 
 		if( $wpdb->update(
@@ -71,7 +72,7 @@ class Model_Category implements IlistItem
 			) )
 		{
 			$result[ 'status' ] = true;
-			$result[ 'message' ] = "berhasil update bank";
+			$result[ 'message' ] = "berhasil update category";
 		}
 		return $result;
 	}
@@ -152,6 +153,7 @@ class Model_Category implements IlistItem
 		if ( $result ){
 			$this->id = $row[ 'category_id' ];
 			$this->name = $row[ 'category_name' ];
+			$this->description = $row[ 'category_desc' ];
 		}
 		return $result;
 	}

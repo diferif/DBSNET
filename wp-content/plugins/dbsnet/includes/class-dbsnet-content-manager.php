@@ -41,6 +41,7 @@ class DBSnet_Content_Manager {
 
 		$this->loader->add_action( 'wp_ajax_UpdateTenant', $admin, 'UpdateTenant' );
 		$this->loader->add_action( 'wp_ajax_UpdateBank', $admin, 'UpdateBank' );
+		$this->loader->add_action( 'wp_ajax_UpdateCategory', $admin, 'UpdateCategory' );
 	}
 
 	public function run() {
