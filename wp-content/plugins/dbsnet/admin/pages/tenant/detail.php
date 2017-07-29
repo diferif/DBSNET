@@ -11,7 +11,7 @@
 			<p><?php _e( $tenant->GetDescription() ); ?></p>
 			<p><?php _e( $tenant->GetAddress() ); ?></p>
 			<p><?php _e( $tenant->GetTelp() ); ?></p>
-			<!-- <p><a href="?page=sltg-personal&detail=<?php //_e( $tenant->GetPemilik()->GetID() ); ?>"><?php //_e( $tenant->GetPemilik()->GetNama() ); ?></a></p> -->
+			<!-- <p><a href="?page=dbsnet-personal&detail=<?php //_e( $tenant->GetPemilik()->GetID() ); ?>"><?php //_e( $tenant->GetPemilik()->GetNama() ); ?></a></p> -->
 		</div>
 	</div>
 	<div>
@@ -26,23 +26,23 @@
 		<!-- <ul><h4>Product:</h4>
 			<?php //foreach( $tenant->GetProducts() as $product ): ?>
 			<?php //var_dump($gbr); ?>
-				<li><a href="?page=sltg-product&detail=<?php //_e( $product->GetID() ); ?>"><img src="<?php //_e( $product->GetGambarUtama()->GetLinkGambar() ) ?>" width="10%"></a></li>
+				<li><a href="?page=dbsnet-product&detail=<?php //_e( $product->GetID() ); ?>"><img src="<?php //_e( $product->GetGambarUtama()->GetLinkGambar() ) ?>" width="10%"></a></li>
 			<?php //endforeach; ?>
 		</ul> -->
 	</div>
 </div>
 <div class="plugin-content-link">
-	<a href="?page=sltg-tenant&doaction=create-new">
+	<a href="?page=dbsnet-tenant&doaction=create-new">
 		<button id="add-tenant" class="btn btn-primary">
 			<span class="glyphicon glyphicon-plus"></span> Add
 		</button>
 	</a>
-	<a href="?page=sltg-tenant&doaction=edit&tenant=<?php _e( $tenant->GetID() ) ?>">
+	<a href="?page=dbsnet-tenant&doaction=edit&tenant=<?php _e( $tenant->GetID() ) ?>">
 		<button id="edit-tenant" class="btn btn-warning">
 			<span class="glyphicon glyphicon-edit"></span> Edit
 		</button>
 	</a>
-	<a href="?page=sltg-tenant&doaction=delete&tenant=<?php _e( $tenant->GetID() ) ?>">
+	<a href="?page=dbsnet-tenant&doaction=delete&tenant=<?php _e( $tenant->GetID() ) ?>">
 		<button id="delete-tenant" class="btn btn-danger">
 			<span class="glyphicon glyphicon-trash"></span> Delete
 		</button>
