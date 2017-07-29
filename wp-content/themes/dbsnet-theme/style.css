@@ -6,3 +6,13 @@ Description: Custom DBS.Net Theme
 Version: 1.0
 Text Domain: dbsnet-theme
 */
+
+/* 
+navbar additional setup for removing brand 
+*/
+.navbar .container, .navbar-collapse {
+    padding-left:0;
+}
+.navbar-collapse.in {
+    padding-left:30px;
+}
