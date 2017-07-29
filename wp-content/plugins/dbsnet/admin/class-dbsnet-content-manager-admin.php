@@ -163,10 +163,10 @@ class DBSnet_Content_Manager_Admin {
 
 	public function render_dbsnet_bank(){
 		if( isset( $_GET[ 'detail' ] ) && $_GET[ 'detail' ] > 0 ) {
-			// $get_detail = sanitize_text_field( $_GET[ 'detail'] );
-			// $obj = new Sltg_UKM();
+			$get_detail = sanitize_text_field( $_GET[ 'detail'] );
+			$obj = new Model_Bank();
 
-			// $content = $this->loadDetail( $obj, $get_detail, "tenant", "tenant");
+			$content = $this->loadDetail( $obj, $get_detail, "bank", "bank");
 		}
 		else if( isset( $_GET[ 'doaction' ] ) && $_GET[ 'doaction' ] != "" ){
 			$get_action = sanitize_text_field( $_GET[ 'doaction' ] );
