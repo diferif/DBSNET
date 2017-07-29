@@ -83,13 +83,13 @@ class Model_Category implements IlistItem
 		$result = array( "status" => false, "message" => "" );
 		if( $wpdb->query(
 			$wpdb->prepare(
-				"DELETE FROM $this->table_name WHERE bank_id = %d",
+				"DELETE FROM $this->table_name WHERE category_id = %d",
 				$this->id
 			)
 		))
 			{
 				$result['status'] = true;
-				$result['message'] = "Berhasil menghapus tenant";
+				$result['message'] = "Berhasil menghapus Category";
 			} 
 		return $result;
 	}
