@@ -598,6 +598,10 @@ class DBSnet_Content_Manager_Admin {
 				$obj = new Model_Bank();
 			}
 
+			if( $get_listfor == 'category' ){
+				$obj = new Model_Category();
+			}
+
 
 			$attributes[ 'listfor' ] = $obj->iGet_Listfor();
 			$option_limit_name = $obj->iGet_LimitName();
@@ -656,6 +660,11 @@ class DBSnet_Content_Manager_Admin {
 				$dir_obj = "bank";
 			}
 
+			if( $get_listfor == 'category' ) {
+				$obj = new Model_Category();
+				$dir_obj = "category";
+			}
+
 			$rows = $obj->DataList( $get_limit, $offset, $get_search, $filter );
 
 			$arrObj = array();
@@ -671,6 +680,12 @@ class DBSnet_Content_Manager_Admin {
 					$bank = new Model_Bank();
 					$bank->HasID( $row->bank_id );
 					$arrObj['bank'][] = $bank;
+				}
+
+				if( $get_listfor == 'category' ){
+					$category = new Model_Category();
+					$category->HasID( $row->category_id );
+					$arrObj['category'][] = $category;
 				}
 			}
 			// var_dump($arrObj['service']);

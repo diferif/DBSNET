@@ -96,9 +96,8 @@ class Model_Category implements IlistItem
 	public function CountData( $searchForName = "", $arg1 = null ) {
 		global $wpdb;
 
-		//$query = "SELECT COUNT(id_hotel) AS jumlah FROM $this->table_name";
-		$query = "SELECT COUNT(bank_id) AS jumlah FROM $this->table_name " .
-					"WHERE bank_name LIKE %s";
+		$query = "SELECT COUNT(category_id) AS jumlah FROM $this->table_name " .
+					"WHERE category_name LIKE %s";
 		$bindValues = array();
 		$bindValues[] = "%".$searchForName."%";
 
@@ -115,8 +114,8 @@ class Model_Category implements IlistItem
 
 	public function DataList( $limit = -1, $offset = -1, $searchForName = "", $kategori = 0) {
 		global $wpdb;
-		$query = "SELECT bank_id FROM $this->table_name " .
-					"WHERE bank_name LIKE %s";
+		$query = "SELECT category_id FROM $this->table_name " .
+					"WHERE category_name LIKE %s";
 		$bindValues = array();
 		$bindValues[] = "%".$searchForName."%";
 
@@ -138,21 +137,21 @@ class Model_Category implements IlistItem
 		return $rows;
 	}
 
-	public function HasID( $bank_id = 0){
+	public function HasID( $category_id = 0){
 		global $wpdb;
 		$row =
 			$wpdb->get_row(
 				$wpdb->prepare(
 					"SELECT * FROM $this->table_name 
-					WHERE bank_id = %d",
-					$bank_id
+					WHERE category_id = %d",
+					$category_id
 					),
 				ARRAY_A
 				);
 		$result = ! is_null( $row );
 		if ( $result ){
-			$this->id = $row[ 'bank_id' ];
-			$this->name = $row[ 'bank_name' ];
+			$this->id = $row[ 'category_id' ];
+			$this->name = $row[ 'category_name' ];
 		}
 		return $result;
 	}
