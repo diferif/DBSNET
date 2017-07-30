@@ -57,7 +57,7 @@
       </div>
     </nav>
 
-    <div class="container after-navbar">
+    <div class="container after-navbar bg-warning">
       <div class="row">
         <div class="col-xs-0 col-sm-0 col-md-3"></div>
         <form class="col-md-6" role="search">
@@ -79,7 +79,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container bg-danger">
       <div class="slideshow-container">
         <div class="mySlides fade">
           <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width: 100%">
@@ -122,6 +122,6 @@
       }
     </script>
 
-    <div class="container">
+    <div class="container bg-info">
       <!-- Example row of columns -->
       <div class="row">       

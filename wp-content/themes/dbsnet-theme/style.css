@@ -38,7 +38,7 @@ Slideshow Tenant
 	position: relative;
 	margin: auto;
 }
-.slideshow-text {
+/*.slideshow-text {
 	color: #f2f2f2;
 	font-size: 15px;
 	padding: 8px 12px;
@@ -46,8 +46,8 @@ Slideshow Tenant
 	bottom: 8px;
 	width: 100%;
 	text-align: center;
-}
-.dot {
+}*/
+/*.dot {
 	height: 13px;
 	width: 13px;
 	margin: 0 2px;
@@ -55,10 +55,10 @@ Slideshow Tenant
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 0.6s ease;
-}
-.slideshow-active {
+}*/
+/*.slideshow-active {
 	background-color: #717171;
-}
+}*/
 .fade {
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 3s;
