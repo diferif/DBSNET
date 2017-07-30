@@ -30,6 +30,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <a class="navbar-brand" href="<?php _e(home_url());?>">Dibuang Sayang</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -56,12 +57,25 @@
       </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    <div class="container after-navbar">
+      <div class="row">
+        <div class="col-xs-0 col-sm-0 col-md-3"></div>
+        <form class="col-md-6" role="search">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <select name="" class="form-control">
+                <option value="0">Kategori</option>
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+              </select>
+            </span>
+            <input type="text" class="form-control" aria-label="..." name="">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            </span>
+          </div> <!-- /input-group -->
+        </form>
       </div>
     </div>
 

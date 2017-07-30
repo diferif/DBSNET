@@ -16,3 +16,15 @@ navbar additional setup for removing brand
 .navbar-collapse.in {
     padding-left:30px;
 }
+/*
+give space the block after navbar
+*/
+.after-navbar {
+	margin-top: 50px;
+}
+/*
+sizing select in input-group
+*/
+.input-group-btn select{
+	width:auto !important;
+}
