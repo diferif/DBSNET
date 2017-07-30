@@ -1,112 +1,327 @@
         <?php get_header(); ?>
-          <div class="col-sm-3 col-lg-3 col-md-3">
-              <div class="thumbnail">
-                  <img src="http://placehold.it/320x150" alt="">
-                  <div class="caption">
-                      <h4 class="pull-right">$24.99</h4>
-                      <h4><a href="#">First Product</a>
-                      </h4>
-                      <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-                  </div>
-                  <div class="ratings">
-                      <p class="pull-right">15 reviews</p>
-                      <p>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                      </p>
-                  </div>
+          <div class="col-sm-12 col-lg-6 col-md-6 bg-warning">
+            <div class="row">
+              <div class="col-sm-12 col-lg-12 col-md-12">
+                <h3>Produk Terbaru</h3>
               </div>
+              <div class="col-md-4 col-sm-4">
+                <span class="thumbnail thumbnail-mini">
+                  <img src="http://placehold.it/500x400" alt="...">
+                  <h4>Product 1</h4>
+                  <div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                  </div>
+                  <p class="price">$29,90</p>
+                  
+                  <hr class="line">
+                  <button class="btn btn-success" > BUY ITEM</button>
+                </span>
+              </div>
+
+              <div class="col-md-4 col-sm-4">
+                <span class="thumbnail thumbnail-mini">
+                  <img src="http://placehold.it/500x400" alt="...">
+                  <h4>Product 2</h4>
+                  <div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                  </div>
+                  <p class="price">$29,90</p>
+                  
+                  <hr class="line">
+                  <button class="btn btn-success" > BUY ITEM</button>
+                </span>
+              </div>
+
+              <div class="col-md-4 col-sm-4">
+                <span class="thumbnail thumbnail-mini">
+                  <img src="http://placehold.it/500x400" alt="...">
+                  <h4>Product 3</h4>
+                  <div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                  </div>
+                  <p class="price">$29,90</p>
+                  
+                  <hr class="line">
+                  <button class="btn btn-success" > BUY ITEM</button>
+                </span>
+              </div>
+            </div>
           </div>
 
-          <div class="col-sm-3 col-lg-3 col-md-3">
-              <div class="thumbnail">
-                  <img src="http://placehold.it/320x150" alt="">
-                  <div class="caption">
-                      <h4 class="pull-right">$64.99</h4>
-                      <h4><a href="#">Second Product</a>
-                      </h4>
-                      <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-                  <div class="ratings">
-                      <p class="pull-right">12 reviews</p>
-                      <p>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star-empty"></span>
-                      </p>
-                  </div>
+          <div class="col-sm-12 col-lg-6 col-md-6 bg-info">
+            <div class="row">
+              <div class="col-sm-12 col-lg-12 col-md-12">
+                <h3>Produk Terlaris</h3>
               </div>
+              <div class="col-md-4 col-sm-4">
+                <span class="thumbnail thumbnail-mini">
+                  <img src="http://placehold.it/500x400" alt="...">
+                  <h4>Product 1</h4>
+                  <div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                  </div>
+                  <p class="price">$29,90</p>
+                  
+                  <hr class="line">
+                  <button class="btn btn-success" > BUY ITEM</button>
+                </span>
+              </div>
+          
+              <div class="col-md-4 col-sm-4">
+                <span class="thumbnail thumbnail-mini">
+                  <img src="http://placehold.it/500x400" alt="...">
+                  <h4>Product 2</h4>
+                  <div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                  </div>
+                  <p class="price">$29,90</p>
+                  
+                  <hr class="line">
+                  <button class="btn btn-success" > BUY ITEM</button>
+                </span>
+              </div>
+              
+              <div class="col-md-4 col-sm-4">
+                <span class="thumbnail thumbnail-mini">
+                  <img src="http://placehold.it/500x400" alt="...">
+                  <h4>Product 3</h4>
+                  <div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                  </div>
+                  <p class="price">$29,90</p>
+                  
+                  <hr class="line">
+                  <button class="btn btn-success" > BUY ITEM</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /row -->
+      </div> <!-- /container -->
+      <div class="container bg-success">
+        <div class="row">
+          <div class="col-md-3 col-sm-4">
+            <span class="thumbnail">
+                <img src="http://placehold.it/500x400" alt="...">
+                <h4>Product Tittle</h4>
+                <div class="ratings">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <hr class="line">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <p class="price">$29,90</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <button class="btn btn-success right" > BUY ITEM</button>
+                  </div>
+                  
+                </div>
+            </span>
+          </div>
+          
+          <div class="col-md-3 col-sm-4">
+            <span class="thumbnail">
+                <img src="http://placehold.it/500x400" alt="...">
+                <h4>Product Tittle</h4>
+                <div class="ratings">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <hr class="line">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <p class="price">$29,90</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <button class="btn btn-success right" > BUY ITEM</button>
+                  </div>
+                  
+                </div>
+            </span>
           </div>
 
-          <div class="col-sm-3 col-lg-3 col-md-3">
-              <div class="thumbnail">
-                  <img src="http://placehold.it/320x150" alt="">
-                  <div class="caption">
-                      <h4 class="pull-right">$74.99</h4>
-                      <h4><a href="#">Third Product</a>
-                      </h4>
-                      <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="col-md-3 col-sm-4">
+            <span class="thumbnail">
+                <img src="http://placehold.it/500x400" alt="...">
+                <h4>Product Tittle</h4>
+                <div class="ratings">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <hr class="line">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <p class="price">$29,90</p>
                   </div>
-                  <div class="ratings">
-                      <p class="pull-right">31 reviews</p>
-                      <p>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star-empty"></span>
-                      </p>
+                  <div class="col-md-6 col-sm-6">
+                    <button class="btn btn-success right" > BUY ITEM</button>
                   </div>
-              </div>
+                  
+                </div>
+            </span>
           </div>
 
-          <div class="col-sm-3 col-lg-3 col-md-3">
-              <div class="thumbnail">
-                  <img src="http://placehold.it/320x150" alt="">
-                  <div class="caption">
-                      <h4 class="pull-right">$84.99</h4>
-                      <h4><a href="#">Fourth Product</a>
-                      </h4>
-                      <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="col-md-3 col-sm-4">
+            <span class="thumbnail">
+                <img src="http://placehold.it/500x400" alt="...">
+                <h4>Product Tittle</h4>
+                <div class="ratings">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <hr class="line">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <p class="price">$29,90</p>
                   </div>
-                  <div class="ratings">
-                      <p class="pull-right">6 reviews</p>
-                      <p>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star-empty"></span>
-                          <span class="glyphicon glyphicon-star-empty"></span>
-                      </p>
+                  <div class="col-md-6 col-sm-6">
+                    <button class="btn btn-success right" > BUY ITEM</button>
                   </div>
-              </div>
+                  
+                </div>
+            </span>
           </div>
 
-          <div class="col-sm-3 col-lg-3 col-md-3">
-              <div class="thumbnail">
-                  <img src="http://placehold.it/320x150" alt="">
-                  <div class="caption">
-                      <h4 class="pull-right">$94.99</h4>
-                      <h4><a href="#">Fifth Product</a>
-                      </h4>
-                      <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="col-md-3 col-sm-4">
+            <span class="thumbnail">
+                <img src="http://placehold.it/500x400" alt="...">
+                <h4>Product Tittle</h4>
+                <div class="ratings">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <hr class="line">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <p class="price">$29,90</p>
                   </div>
-                  <div class="ratings">
-                      <p class="pull-right">18 reviews</p>
-                      <p>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star-empty"></span>
-                      </p>
+                  <div class="col-md-6 col-sm-6">
+                    <button class="btn btn-success right" > BUY ITEM</button>
                   </div>
-              </div>
+                  
+                </div>
+            </span>
+          </div>
+          
+          <div class="col-md-3 col-sm-4">
+            <span class="thumbnail">
+                <img src="http://placehold.it/500x400" alt="...">
+                <h4>Product Tittle</h4>
+                <div class="ratings">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <hr class="line">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <p class="price">$29,90</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <button class="btn btn-success right" > BUY ITEM</button>
+                  </div>
+                  
+                </div>
+            </span>
+          </div>
+
+          <div class="col-md-3 col-sm-4">
+            <span class="thumbnail">
+                <img src="http://placehold.it/500x400" alt="...">
+                <h4>Product Tittle</h4>
+                <div class="ratings">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <hr class="line">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <p class="price">$29,90</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <button class="btn btn-success right" > BUY ITEM</button>
+                  </div>
+                  
+                </div>
+            </span>
+          </div>
+
+          <div class="col-md-3 col-sm-4">
+            <span class="thumbnail">
+                <img src="http://placehold.it/500x400" alt="...">
+                <h4>Product Tittle</h4>
+                <div class="ratings">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <hr class="line">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <p class="price">$29,90</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <button class="btn btn-success right" > BUY ITEM</button>
+                  </div>
+                  
+                </div>
+            </span>
           </div>
 
         <?php get_footer(); ?>

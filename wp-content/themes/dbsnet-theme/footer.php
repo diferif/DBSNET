@@ -1,8 +1,8 @@
       </div>
+    </div>
 
-      <hr>
-
-      <footer class="bg-primary">
+    <div class="container bg-primary">
+      <footer>
         <p>&copy; 2016 Company, Inc.</p>
       </footer>
     </div> <!-- /container -->
