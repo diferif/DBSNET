@@ -20,7 +20,22 @@
   </head>
 
   <body <?php body_class(); ?>>
-
+    <button type="button" class="btn btn-warning" onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <script>
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction(){
+        if(document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+          document.getElementById("topBtn").style.display = "block";
+        }
+        else{
+          document.getElementById("topBtn").style.display = "none";
+        }
+      }
+      function topFunction(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
