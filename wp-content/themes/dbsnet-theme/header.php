@@ -80,47 +80,35 @@
     </div>
 
     <div class="container bg-danger">
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width: 100%">
-          <!-- <div class="slideshow-text">Tenant 1</div> -->
+      <div id="dbsnetCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+          <li data-target="#dbsnetCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#dbsnetCarousel" data-slide-to="1"></li>
+          <li data-target="#dbsnetCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="item active">
+            <img alt="nature" src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/merch/2017/SMP/ftvs/popcorngws/1500x300_Lifestyle_v1._CB503869808_.jpg" style="width: 100%">
+          </div>
+          <div class="item">
+            <img alt="fjords" src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2017/EDITORIAL/SUMMER_3/GATEWAY/DESKTOP/1x/HERO_W_xCat_ShoppingList2_1x._CB504779749_.jpg" style="width: 100%">
+          </div>
+          <div class="item">
+            <img alt="mountains" src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/merch/gateway/superhero/Amazon_GW_DesktopHero_AVD-6545_SpongebobSwap_GWAcquisitionTopStreamGrid_V1_1500x300._CB506302663_.jpg" style="width: 100%">
+          </div>
         </div>
-        <div class="mySlides fade">
-          <img src="https://www.w3schools.com/howto/img_fjords_wide.jpg" style="width: 100%">
-          <!-- <div class="slideshow-text">Tenant 2</div> -->
-        </div>
-        <div class="mySlides fade">
-          <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width: 100%">
-          <!-- <div class="slideshow-text">Tenant 3</div> -->
-        </div>
+
+        <a class="left carousel-control" data-slide="prev" href="#dbsnetCarousel">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" data-slide="next" href="#dbsnetCarousel">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <br>
-      <!-- <div style="text-align: center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div> -->
-    </div>
-    <script>
-      var slideIndex = 0;
-      showSlides();
-      function showSlides(){
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        // var dots = document.getElementsByClassName("dot");
-        for(i = 0; i < slides.length; i++){
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if(slideIndex > slides.length){slideIndex=1}
-        // for(i = 0; i < dots.length; i++){
-        //   dots[i].className = dots[i].className.replace(" slideshow-active","");
-        // }
-        slides[slideIndex-1].style.display = "block";
-        // dots[slideIndex-1].className += " slideshow-active";
-        setTimeout(showSlides,3000);
-      }
-    </script>
+    </div> <!-- /container -->
 
     <div class="container bg-info">
       <!-- Example row of columns -->
